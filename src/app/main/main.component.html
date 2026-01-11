@@ -19,10 +19,10 @@
             <span>You must roll at least one die</span>
         </div>
 
-        <!--input for current number of hunger dice-->
+        <!--input for current number of Desperation dice-->
         <div class='input-group'>
             <div class="input-group-prepend">
-                <span class="input-group-text red">Hunger</span>
+                <span class="input-group-text red">Desperation</span>
             </div>
             <input type='number' min='0' max='5' class='form-control' id='hunger-dice' style='max-width: 80px;'
                 [(ngModel)]='hunger'>
@@ -30,11 +30,11 @@
 
         <!--error if less than zero hunger indicated-->
         <div *ngIf='tooFewHungerFlag' class='alert alert-danger'>
-            <span>You must have at least zero hunger</span>
+            <span>You must have at least zero Desperation</span>
         </div>
         <!--error if more than 5 hunger indicated-->
         <div *ngIf='tooManyHungerFlag' class='alert alert-danger'>
-            <span>You can only have a maximum of five hunger</span>
+            <span>You can only have a maximum of five Desperation</span>
         </div>
 
         <!--input for current difficulty, if known (can be left blank)-->
