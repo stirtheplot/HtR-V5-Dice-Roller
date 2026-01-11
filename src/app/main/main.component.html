@@ -87,15 +87,15 @@
             </div>
             <!--indicator for potential messy crit when succeed/fail of roll is not known-->
             <div id='messy' *ngIf='messyFlag'>
-                <h4>Possible messy crit</h4>
+                <h4>Possible crit</h4>
             </div>
             <!--indicator for potential bestial fail when succeed/fail of roll is not known-->
             <div id='bestial' *ngIf='bestialFlag && !definiteBestialFlag'>
-                <h4>Possible bestial failure</h4>
+                <h4>Possible failure</h4>
             </div>
             <!--indicator for definite bestial fail when there are no successes and at least one skull result-->
             <div id='bestial' *ngIf='definiteBestialFlag'>
-                <h4>Bestial failure</h4>
+                <h4>Possible Overreach or Despair</h4>
             </div>
         </div>
 
